@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroAlerts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/api.js" defer></script>
+    <script src="assets/js/pagination.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div id="title">AstroAlerts</div>
+    </nav>
+    <div id="intro">
+    </div>
+    <div id="searchContainer">
+        <input type="text" id="searchbar">
+        <button id="search">search</button>
+    </div>
+    <div class="pagination">
+        <button id="prevButton" onclick="prevPage()">Previous</button>
+        <div class="count1"></div>
+        <button id="nextButton" onclick="nextPage()">Next</button>
+    </div>
+    <div id="container"></div>
+    <div class="pagination">
+        <button id="prevButton1" onclick="prevPage()">Previous</button>
+        <div class="count2"></div>
+        <button id="nextButton1" onclick="nextPage()">Next</button>
+    </div>
+</body>
+</html>

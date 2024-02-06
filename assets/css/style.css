@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+    background-image: url("../images/space.jpg");
+    background-size: 2000px;
+    margin-bottom: 50px;
+    
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding: 2px;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    z-index: 1;
+    border-bottom: 2px solid rgba(94, 94, 94, 0.292);
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #353535;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+  }
+#title{
+    font-weight: 400;
+    font-size: 50px;
+}
+#intro{
+    position: relative;
+    top: -100PX;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 200px 50px 250px 50px ;
+    color: white;
+    background-image: url("../images/spacestation1.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+}
+#intro::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+#container{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .pagination{
+        width: 70%;
+        margin-top: 10px;
+    }
+    #intro{
+        font-size: 30px;
+        padding: 200px 50px 80px 50px ;
+    }
+    #intro::after{
+        height: 100px; 
+    }
+
+}
+@media screen and (max-width: 550px) {
+    #title{
+        font-size: 30px;
+    }
+    #intro{
+        top: -150px;
+        font-size: 25px;
+    }
+}
